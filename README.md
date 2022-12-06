@@ -23,6 +23,8 @@ graph LR
 
 ## Install
 
+Follow the generic instructions for gridsome first.
+
 ```
 bash
 npm install gridsome-plugin-remark-diagrams
