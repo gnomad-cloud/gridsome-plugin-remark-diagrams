@@ -1,15 +1,13 @@
 # Draw diagrams in markdown
 
-Draw diagrams using Markdown and publish with Gridsome. 
+This gridsome plugin allows you to draw diagrams using markdown. 
 
-## use `mermaid` code blocks in your markdown to generate diagrams:
+Once installed, we can embed `mermaid` code blocks in our markdown to generate diagrams.
 
-```
 ```mermaid
 graph LR
   A --> B
   B --> C
-```
 ```
 
 See [mermaid](https://mermaid-js.github.io) for more examples.
