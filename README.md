@@ -4,6 +4,13 @@ This gridsome plugin allows you to draw diagrams using markdown.
 
 Once installed, we can embed `mermaid` code blocks in our markdown to generate diagrams.
 
+~~~
+mermaid
+graph LR
+  A --> B
+  B --> C
+~~~
+
 ```mermaid
 graph LR
   A --> B
