@@ -68,7 +68,7 @@ function mermaidNodes(markdownAST, language) {
 
 function getOptions(options) {
   return {
-    language: 'mermaid',
+    language: 'diagram',
     theme :'default',
     viewport: {height: 200, width: 200},
     removeStyleTags: false,

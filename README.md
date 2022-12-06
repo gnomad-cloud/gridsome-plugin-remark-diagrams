@@ -5,7 +5,7 @@ This gridsome plugin allows you to draw diagrams using markdown.
 Once installed, we can embed `mermaid` code blocks in our markdown to generate diagrams.
 
 ~~~
-mermaid
+diagram
 graph LR
   A --> B
   B --> C
@@ -57,7 +57,7 @@ When using the `removeStyleTags` attribute, you will need to import your Mermaid
 
 | Name            | Default               | Description                                                                                                                                                     |
 | --------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| language        | "mermaid"             | The code block tag.                                                 |
+| language        | "diagrams"            | The code block tag.
 | theme           | "default"             | `"dark"`|`"neutral"`|`"forest"`|`"default"` |
 | viewport.width  | 200                   | width of image                                                                                                                                      |
 | viewport.height | 200                   | height of image                                                                                                                                     |

@@ -1,6 +1,6 @@
 {
   "name": "@gnomad-cloud/gridsome-plugin-remark-diagrams",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Draw diagrams using markdown",
   "homepage": "https://github.com/gnomad-cloud/gridsome-plugin-remark-diagrams#readme",
   "repository": "https://github.com/gnomad-cloud/gridsome-plugin-remark-diagrams",
