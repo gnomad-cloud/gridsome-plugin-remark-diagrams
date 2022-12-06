@@ -17,13 +17,15 @@ graph LR
   B --> C
 ```
 
-See [mermaid](https://mermaid-js.github.io) for more examples.
+- See [mermaid](https://mermaid-js.github.io) for more examples.
+
+- Try out the [mermaid editor](https://mermaid-js.github.io/mermaid-live-editor/).
 
 ## Install
 
 ```
 bash
-npm install gridsome-plugin-remark-mermaid
+npm install gridsome-plugin-remark-diagrams
 ```
 
 ## Usage
@@ -34,7 +36,7 @@ Configure `gridsome.config.js` to use the plugin.
   transformers: {
     remark: {
       plugins: [
-        'gridsome-plugin-remark-mermaid',
+        'gridsome-plugin-remark-diagrams',
         // existing plugins //
       ]
     }
@@ -46,14 +48,15 @@ Configure `gridsome.config.js` to use the plugin.
 
 The generated SVG is wrapped in `<div class="mermaid"></div>` to help you customize your styles.
 
-When using the `removeStyleTags` attribute, you will need to import your Mermaid themes yourself. You can find an example project [here](https://github.com/Braincoke/starter-gridsome-mermaid).
+When using the `removeStyleTags` attribute, you will need to import your Mermaid themes yourself. 
+
 
 ## Options
 
 | Name            | Default               | Description                                                                                                                                                     |
 | --------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | language        | "mermaid"             | The code block language triggering a SVG generation. Change it to `"graph"` to create diagrams with ````graph`.                                                 |
-| theme           | "default"             | This value can be set to `"dark"`, `"neutral"`, `"forest"` or `"default"`. Try them on the [mermaid editor](https://mermaid-js.github.io/mermaid-live-editor/). |
+| theme           | "default"             | This value can be set to `"dark"`, `"neutral"`, `"forest"` or `"default"`.  |
 | viewport.width  | 200                   | The desired viewport width                                                                                                                                      |
 | viewport.height | 200                   | The desired viewport height                                                                                                                                     |
 | removeStyleTags | false                 | Remove all style tags from the generated SVG. If you use this option you will have to import the mermaid css at some point                                      |
