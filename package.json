@@ -1,14 +1,14 @@
 {
-  "name": "gridsome-plugin-remark-mermaid",
-  "version": "1.0.1",
-  "description": "Use mermaidjs in your markdown to create diagrams.",
-  "homepage": "https://github.com/Braincoke/gridsome-plugin-remark-mermaid#readme",
-  "repository": "https://github.com/Braincoke/gridsome-plugin-remark-mermaid",
+  "name": "gridsome-plugin-remark-diagrams",
+  "version": "0.1.0",
+  "description": "Draw diagrams using markdown",
+  "homepage": "https://github.com/gnomad-cloud/gridsome-plugin-remark-diagrams#readme",
+  "repository": "https://github.com/gnomad-cloud/gridsome-plugin-remark-diagrams",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "author": "Braincoke <braincoke+contact@protonmail.com>",
+  "author": "oss <contrib.oss@gnomad.cloud>",
   "license": "MIT",
   "dependencies": {
     "mermaid": "^8.4.8",
