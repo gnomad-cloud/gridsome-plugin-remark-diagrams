@@ -1,56 +1,43 @@
-# gridsome-remark-mermaid
+# Draw diagrams in markdown
 
-Use [mermaid](https://mermaid-js.github.io) code blocks in your markdown file to generate diagrams with Gridsome and remark.
+Draw diagrams using Markdown and publish with Gridsome. 
 
-This plugin is heavily inspired by [gatsby-remark-mermaid](https://github.com/ChappIO/gatsby-remark-mermaid).
-It uses **server-side rendering** to generate inline SVG code during the build process.
+## use `mermaid` code blocks in your markdown to generate diagrams:
+
+```
+```mermaid
+graph LR
+  A --> B
+  B --> C
+```
+```
+
+See [mermaid](https://mermaid-js.github.io) for more examples.
 
 ## Install
 
-~~~bash
+```
+bash
 npm install gridsome-plugin-remark-mermaid
-~~~
+```
 
 ## Usage
 
 Configure `gridsome.config.js` to use the plugin.
-Make sure this plugin is imported before any other plugin that processes code blocks such as *@gridsome/remark-prismjs* or *gridsome-plugin-remark-shiki*.
 
-~~~js
-module.exports = {
-  siteName: 'Gridsome Blog',
-  siteDescription: 'A simple blog designed with Gridsome',
-  plugins: [
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'content/posts/**/*.md',
-        typeName: 'Post',
-        route: '/blog/:slug'
-      }
-    }
-  ],
+```
   transformers: {
     remark: {
       plugins: [
-        // Add remark-mermaid plugin
         'gridsome-plugin-remark-mermaid',
-        '@gridsome/remark-prismjs'
+        // existing plugins //
       ]
     }
-  },
-}
-~~~
+  }
+```
 
-Then use mermaid code blocks in your markdown to generate diagrams:
 
-  ~~~mermaid
-  graph LR
-    A --> B
-    B --> C
-  ~~~
-
-## Styling
+## Advanced Styling
 
 The generated SVG is wrapped in `<div class="mermaid"></div>` to help you customize your styles.
 
@@ -60,7 +47,7 @@ When using the `removeStyleTags` attribute, you will need to import your Mermaid
 
 | Name            | Default               | Description                                                                                                                                                     |
 | --------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| language        | "mermaid"             | The code block language triggering a SVG generation. Change it to `"graph"` to create diagrams with `~~~graph`.                                                 |
+| language        | "mermaid"             | The code block language triggering a SVG generation. Change it to `"graph"` to create diagrams with ````graph`.                                                 |
 | theme           | "default"             | This value can be set to `"dark"`, `"neutral"`, `"forest"` or `"default"`. Try them on the [mermaid editor](https://mermaid-js.github.io/mermaid-live-editor/). |
 | viewport.width  | 200                   | The desired viewport width                                                                                                                                      |
 | viewport.height | 200                   | The desired viewport height                                                                                                                                     |
@@ -70,7 +57,7 @@ When using the `removeStyleTags` attribute, you will need to import your Mermaid
 
 The default options are:
 
-~~~js
+```js
 {
   language: "mermaid",
   theme: "default",
@@ -82,4 +69,13 @@ The default options are:
   removeStyleTags: false,
   mermaidOptions: {}
 }
-~~~
+```
+
+## Provenance / Credits
+
+This plugin was forked, upgraded and adopted with gratitude to the original authors.
+
+You can find the original versions here: 
+
+- Forked and upgraded from [gridsome-remark-mermaid](https://github.com/Braincoke/gridsome-plugin-remark-mermaid)
+- Originally inspired by [gatsby-remark-mermaid](https://github.com/ChappIO/gatsby-remark-mermaid)

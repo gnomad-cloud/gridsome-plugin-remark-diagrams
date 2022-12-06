@@ -1,11 +1,22 @@
 const path = require("path");
 const visit = require("unist-util-visit");
 const puppeteer = require("puppeteer");
+
 // Imports remove to remove style tags from svgs
 const remove = require('unist-util-remove')
 const fromXml = require('xast-util-from-xml')
 const toXml = require('xast-util-to-xml')
 
+/**
+ * Render SVG
+ * 
+ * @param {*} container 
+ * @param {*} definition 
+ * @param {*} theme 
+ * @param {*} id 
+ * @param {*} mermaidOptions 
+ * @returns 
+ */
 function renderSvg(container, definition, theme, id, mermaidOptions) {
   try {
     window.mermaid.initialize({
