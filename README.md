@@ -55,13 +55,13 @@ When using the `removeStyleTags` attribute, you will need to import your Mermaid
 
 | Name            | Default               | Description                                                                                                                                                     |
 | --------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| language        | "mermaid"             | The code block language triggering a SVG generation. Change it to `"graph"` to create diagrams with ````graph`.                                                 |
-| theme           | "default"             | This value can be set to `"dark"`, `"neutral"`, `"forest"` or `"default"`.  |
-| viewport.width  | 200                   | The desired viewport width                                                                                                                                      |
-| viewport.height | 200                   | The desired viewport height                                                                                                                                     |
+| language        | "mermaid"             | The code block tag.                                                 |
+| theme           | "default"             | `"dark"`|`"neutral"`|`"forest"`|`"default"` |
+| viewport.width  | 200                   | width of image                                                                                                                                      |
+| viewport.height | 200                   | height of image                                                                                                                                     |
 | removeStyleTags | false                 | Remove all style tags from the generated SVG. If you use this option you will have to import the mermaid css at some point                                      |
 | id              | `mermaid-<currentTime>` | Sets the identifier of the SVG. Defaults to a unique ID based on the time of generation                                                                         |
-| mermaidOptions  | {}                    | Pass some custom [mermaid configuration options](https://mermaid-js.github.io/mermaid/#/mermaidAPI?id=configuration) to `mermaid.initialize()`                                                                                    |
+| mermaidOptions  | {}                    | use custom [mermaid configuration options](https://mermaid-js.github.io/mermaid/#/mermaidAPI?id=configuration) to `mermaid.initialize()`                                                                                    |
 
 The default options are:
 
